@@ -53,7 +53,7 @@ const CastSchema = mongoose.Schema({
     type: Date,
     default: Date.now
   }
-})
+});
 
 const Cast = mongoose.model('Cast', CastSchema);
 
