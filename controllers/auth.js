@@ -1,7 +1,7 @@
 const bcrypt = require ('bcryptjs');
 const db = require('../models');
 
-// POST REGISTEr - CREATE NEW USER
+// POST REGISTER - CREATE NEW USER
 
 const register = (req, res) => {
   if (!req.body.firstName || !req.body.lastName || !req.body.email || !req.body.password) {
@@ -68,7 +68,24 @@ const login = (req, res) => {
   });
 };
 
+// POST LOGOUT
+
+const logout = (req, res) => {
+  console.log(req.session)
+  if (!req.session.currentUser) return res.status
+  (401).json({ status: 401, message: 'Unauthorized'});
+  req.session.destroy((err) => {
+    if (err) return res.status(500).json({
+      status: 500, message: 'Something went wrong. Please try again'
+    });
+    res.sendStatus(200);
+  });
+};
+
+
+
 module.exports = {
   register,
   login,
+  logout,
 };
