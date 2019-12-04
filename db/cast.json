@@ -9,9 +9,9 @@
     "gender": "male",
     "firstEpisodeAppeared": 1,
     "lastEpisodeAppeared": 10,
-    "mainPicture": "https://picsum.photos/id/169/200/200",
-    "picture1": "https://picsum.photos/id/170/200/200",
-    "picture2": "https://picsum.photos/id/171/200/200",
+    "mainPicture": "aaaa",
+    "picture1": "bbbb",
+    "picture2": "cccc",
     "seasonsActive": [2]
   },
   {
@@ -24,9 +24,9 @@
     "gender": "male",
     "firstEpisodeAppeared": 1,
     "lastEpisodeAppeared": 11,
-    "mainPicture": "https://picsum.photos/id/169/200/200",
-    "picture1": "https://picsum.photos/id/170/200/200",
-    "picture2": "https://picsum.photos/id/171/200/200",
+    "mainPicture": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/makoto.png",
+    "picture1": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/makoto1.png",
+    "picture2": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/makoto2.jpeg",
     "seasonsActive": [2]
   },
   {
@@ -39,9 +39,9 @@
     "gender": "female",
     "firstEpisodeAppeared": 1,
     "lastEpisodeAppeared": 24,
-    "mainPicture": "https://picsum.photos/id/169/200/200",
-    "picture1": "https://picsum.photos/id/170/200/200",
-    "picture2": "https://picsum.photos/id/171/200/200",
+    "mainPicture": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/minori.jpg",
+    "picture1": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/minori1.PNG",
+    "picture2": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/minori2.jpeg",
     "seasonsActive": [2]
   },
   {
@@ -54,9 +54,9 @@
     "gender": "male",
     "firstEpisodeAppeared": 1,
     "lastEpisodeAppeared": 17,
-    "mainPicture": "https://picsum.photos/id/169/200/200",
-    "picture1": "https://picsum.photos/id/170/200/200",
-    "picture2": "https://picsum.photos/id/171/200/200",
+    "mainPicture": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/yuki.png",
+    "picture1": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/yuki1.PNG",
+    "picture2": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/yuki2.jpeg",
     "seasonsActive": [2]
   },
   {
@@ -69,9 +69,9 @@
     "gender": "female",
     "firstEpisodeAppeared": 1,
     "lastEpisodeAppeared": 17,
-    "mainPicture": "https://picsum.photos/id/169/200/200",
-    "picture1": "https://picsum.photos/id/170/200/200",
-    "picture2": "https://picsum.photos/id/171/200/200",
+    "mainPicture": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/mizuki.png",
+    "picture1": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/mizuki1.PNG",
+    "picture2": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/mizuki2.png",
     "seasonsActive": [2]
   },
   {
@@ -84,9 +84,9 @@
     "gender": "male",
     "firstEpisodeAppeared": 1,
     "lastEpisodeAppeared": 24,
-    "mainPicture": "https://picsum.photos/id/169/200/200",
-    "picture1": "https://picsum.photos/id/170/200/200",
-    "picture2": "https://picsum.photos/id/171/200/200",
+    "mainPicture": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/tatsuya.jpeg",
+    "picture1": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/tatsuya1.PNG",
+    "picture2": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/tatsuya2.jpeg",
     "seasonsActive": [2]
   },
   {
@@ -99,9 +99,9 @@
     "gender": "female",
     "firstEpisodeAppeared": 1,
     "lastEpisodeAppeared": 13,
-    "mainPicture": "https://picsum.photos/id/169/200/200",
-    "picture1": "https://picsum.photos/id/170/200/200",
-    "picture2": "https://picsum.photos/id/171/200/200",
+    "mainPicture": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/yuriko.png",
+    "picture1": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/yuriko1.PNG",
+    "picture2": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/yurikoi2.jpeg",
     "seasonsActive": [2]
   },
   {
@@ -114,9 +114,9 @@
     "gender": "male",
     "firstEpisodeAppeared": 11,
     "lastEpisodeAppeared": 46,
-    "mainPicture": "https://picsum.photos/id/169/200/200",
-    "picture1": "https://picsum.photos/id/170/200/200",
-    "picture2": "https://picsum.photos/id/171/200/200",
+    "mainPicture": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/arman.jpg",
+    "picture1": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/arman1.PNG",
+    "picture2": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/arman2.png",
     "seasonsActive": [2]
   },
   {
@@ -129,9 +129,9 @@
     "gender": "female",
     "firstEpisodeAppeared": 13,
     "lastEpisodeAppeared": 28,
-    "mainPicture": "https://picsum.photos/id/169/200/200",
-    "picture1": "https://picsum.photos/id/170/200/200",
-    "picture2": "https://picsum.photos/id/171/200/200",
+    "mainPicture": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/arisa.jpg",
+    "picture1": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/arisa1.PNG",
+    "picture2": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/arisa2.jpg",
     "seasonsActive": [2]
   },
   {
@@ -144,9 +144,9 @@
     "gender": "female",
     "firstEpisodeAppeared": 19,
     "lastEpisodeAppeared": 32,
-    "mainPicture": "https://picsum.photos/id/169/200/200",
-    "picture1": "https://picsum.photos/id/170/200/200",
-    "picture2": "https://picsum.photos/id/171/200/200",
+    "mainPicture": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/hikaru.PNG",
+    "picture1": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/hikaru1.png",
+    "picture2": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/hikaru2.jpeg",
     "seasonsActive": [2]
   },
   {
@@ -159,9 +159,9 @@
     "gender": "female",
     "firstEpisodeAppeared": 19,
     "lastEpisodeAppeared": 32,
-    "mainPicture": "https://picsum.photos/id/169/200/200",
-    "picture1": "https://picsum.photos/id/170/200/200",
-    "picture2": "https://picsum.photos/id/171/200/200",
+    "mainPicture": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/natsumi.png",
+    "picture1": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/natsumi1.PNG",
+    "picture2": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/natsumi2.jpeg",
     "seasonsActive": [2]
   },
   {
@@ -174,9 +174,9 @@
     "gender": "female",
     "firstEpisodeAppeared": 24,
     "lastEpisodeAppeared": 46,
-    "mainPicture": "https://picsum.photos/id/169/200/200",
-    "picture1": "https://picsum.photos/id/170/200/200",
-    "picture2": "https://picsum.photos/id/171/200/200",
+    "mainPicture": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/misaki.png",
+    "picture1": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/misaki1.PNG",
+    "picture2": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/misaki2.jpeg",
     "seasonsActive": [2]
   },
   {
@@ -189,9 +189,9 @@
     "gender": "male",
     "firstEpisodeAppeared": 25,
     "lastEpisodeAppeared": 35,
-    "mainPicture": "https://picsum.photos/id/169/200/200",
-    "picture1": "https://picsum.photos/id/170/200/200",
-    "picture2": "https://picsum.photos/id/171/200/200",
+    "mainPicture": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/yuto.png",
+    "picture1": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/yuto1.PNG",
+    "picture2": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/yuto2.jpeg",
     "seasonsActive": [2]
   },
   {
@@ -204,9 +204,9 @@
     "gender": "female",
     "firstEpisodeAppeared": 29,
     "lastEpisodeAppeared": 46,
-    "mainPicture": "https://picsum.photos/id/169/200/200",
-    "picture1": "https://picsum.photos/id/170/200/200",
-    "picture2": "https://picsum.photos/id/171/200/200",
+    "mainPicture": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/riko.png",
+    "picture1": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/riko1.PNG",
+    "picture2": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/riko2.jpeg",
     "seasonsActive": [2]
   },
   {
@@ -219,9 +219,9 @@
     "gender": "female",
     "firstEpisodeAppeared": 32,
     "lastEpisodeAppeared": 39,
-    "mainPicture": "https://picsum.photos/id/169/200/200",
-    "picture1": "https://picsum.photos/id/170/200/200",
-    "picture2": "https://picsum.photos/id/171/200/200",
+    "mainPicture": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/momoka.png",
+    "picture1": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/momoka1.PNG",
+    "picture2": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/momoka2.jpeg",
     "seasonsActive": [2]
   },
   {
@@ -234,9 +234,9 @@
     "gender": "male",
     "firstEpisodeAppeared": 32,
     "lastEpisodeAppeared": 46,
-    "mainPicture": "https://picsum.photos/id/169/200/200",
-    "picture1": "https://picsum.photos/id/170/200/200",
-    "picture2": "https://picsum.photos/id/171/200/200",
+    "mainPicture": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/hayato.png",
+    "picture1": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/hayato1.PNG",
+    "picture2": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/hayato2.png",
     "seasonsActive": [2]
   },
   {
@@ -249,9 +249,9 @@
     "gender": "male",
     "firstEpisodeAppeared": 36,
     "lastEpisodeAppeared": 46,
-    "mainPicture": "https://picsum.photos/id/169/200/200",
-    "picture1": "https://picsum.photos/id/170/200/200",
-    "picture2": "https://picsum.photos/id/171/200/200",
+    "mainPicture": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/yuuki.png",
+    "picture1": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/yuuki1.PNG",
+    "picture2": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/yuuki2.jpeg",
     "seasonsActive": [2]
   },
   {
@@ -264,9 +264,9 @@
     "gender": "female",
     "firstEpisodeAppeared": 39,
     "lastEpisodeAppeared": 46,
-    "mainPicture": "https://picsum.photos/id/169/200/200",
-    "picture1": "https://picsum.photos/id/170/200/200",
-    "picture2": "https://picsum.photos/id/171/200/200",
+    "mainPicture": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/masako.png",
+    "picture1": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/masako1.PNG",
+    "picture2": "https://raw.git.generalassemb.ly/jeff-chan-sf-sei-05/thfs-api/master/images/cast-images/masako2.jpeg",
     "seasonsActive": [2]
   }
 ]
