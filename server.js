@@ -40,6 +40,8 @@ app.use(session({
 app.get('/', (req, res) => {
   res.send('<h1>THFS API</h1>');
 });
+
+app.use('/api/v1/auth', routes.auth);
 app.use('/api/v1/cast', routes.cast);
 
 app.listen(process.env.PORT || 4000, () => console.log (`Server connected at http://localhost:${PORT}`));

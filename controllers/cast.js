@@ -28,7 +28,7 @@ const showAllCast = (req,res) => {
     res.json({
       status: 200,
       count: allCast.length,
-      data: allCity,
+      data: allCast,
       requestedAt: new Date().toLocaleString(),
     });
   });
@@ -42,7 +42,7 @@ const showOneCast = (req, res) => {
       res.json ({
         status: 200,
         count: 1,
-        data: foundCity,
+        data: foundCast,
         requestedAt: new Date().toLocaleString(),
       });
     } else {
