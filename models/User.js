@@ -21,6 +21,10 @@ const UserSchema = mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Cast',
   },
+  dateJoined: {
+    type: Date,
+    default: Date.now,
+  }
 });
 
 const User = mongoose.model ('User', UserSchema);
