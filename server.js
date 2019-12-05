@@ -43,5 +43,6 @@ app.get('/', (req, res) => {
 
 app.use('/api/v1/auth', routes.auth);
 app.use('/api/v1/cast', routes.cast);
+app.use('/api/v1/users', routes.users);
 
 app.listen(process.env.PORT || 4000, () => console.log (`Server connected at http://localhost:${PORT}`));

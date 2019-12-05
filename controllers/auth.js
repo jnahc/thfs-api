@@ -68,6 +68,18 @@ const login = (req, res) => {
   });
 };
 
+// GET VERIFY CURRENT USER
+
+const verify = (req, res) => {
+  if (!req.session.currentUser) return res.status(401).json({
+    status: 401, message: 'Unauthorized'
+  });
+  res.status(200).json({
+    status: 200,
+    message: `Current User veririfed. User ID: ${req.session.currentUser.id}`
+  });
+};
+
 // POST LOGOUT
 
 const logout = (req, res) => {
@@ -88,4 +100,5 @@ module.exports = {
   register,
   login,
   logout,
+  verify,
 };
