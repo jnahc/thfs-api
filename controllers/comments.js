@@ -82,9 +82,29 @@ const updateComment = (req,res) => {
   );
 };
 
+// DESTROY COMMENT
+
+const destroy = (req, res) => {
+  db.Comment.findByIdAndDelete(
+    req.params.commentId, (err, destroyComment) => {
+      if (err) return res.status(500).json({
+        status: 500,
+        error: [{message: 'Something went wrong! Please trya gain'}],
+      });
+      res.json({
+        status: 200,
+        count: 1,
+        data: destroyComment,
+        requestedAt: new Date().toLocaleString(),
+      })
+    }
+  );
+};
+
 
 module.exports = {
   createComment,
   showOneComment,
   updateComment,
+  destroy
 }
