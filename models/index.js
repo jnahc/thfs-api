@@ -15,4 +15,5 @@ mongoose.connect(dbUrl, {
 module.exports = {
   User: require('./User'),
   Cast: require ('./Cast'),
+  Comment: require ('./Comment'),
 }

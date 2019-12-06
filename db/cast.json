@@ -1,9 +1,10 @@
 [
   {
+    "_id": "5de7e83c323859de5fd5b260",
     "number": "0",
     "englishName": "Jeremy BUIIIII",
-    "japaneseName": "Jerami",
-    "nickName": "JEREMY",
+    "japaneseName": "げらみ",
+    "nickName": "jButi",
     "occupation": "Software Developer",
     "birthDate": "1995-12-01",
     "gender": "male",
@@ -15,6 +16,7 @@
     "seasonsActive": [2]
   },
   {
+    "_id": "5de7e83c323859de5fd5b261",
     "number": "1",
     "englishName": "Makoto Hasegawa",
     "japaneseName": "長谷川慎",
@@ -30,6 +32,7 @@
     "seasonsActive": [2]
   },
   {
+    "_id": "5de7e83c323859de5fd5b262",
     "number": "2",
     "englishName": "Minori Nakada",
     "japaneseName": "中田みのり",
@@ -45,6 +48,7 @@
     "seasonsActive": [2]
   },
   {
+    "_id": "5de7e83c323859de5fd5b263",
     "number": "3",
     "englishName": "Yuki Adachi",
     "japaneseName": "安達雄基",
@@ -60,6 +64,7 @@
     "seasonsActive": [2]
   },
   {
+    "_id": "5de7e83c323859de5fd5b264",
     "number": "4",
     "englishName": "Mizuki Shida",
     "japaneseName": "信太美月",
@@ -75,6 +80,7 @@
     "seasonsActive": [2]
   },
   {
+    "_id": "5de7e83c323859de5fd5b265",
     "number": "5",
     "englishName": "Tatsuya Uchihara",
     "japaneseName": "内原達也",
@@ -90,6 +96,7 @@
     "seasonsActive": [2]
   },
   {
+    "_id": "5de7e83c323859de5fd5b266",
     "number": "6",
     "englishName": "Yuriko Hayata",
     "japaneseName": "早田悠里子",
@@ -105,6 +112,7 @@
     "seasonsActive": [2]
   },
   {
+    "_id": "5de7e83c323859de5fd5b267",
     "number": "7",
     "englishName": "Arman Bitaraf",
     "japaneseName": "ビタラフ・アルマン",
@@ -120,6 +128,7 @@
     "seasonsActive": [2]
   },
   {
+    "_id": "5de7e83c323859de5fd5b268",
     "number": "8",
     "englishName": "Arisa Ohata",
     "japaneseName": "大畑ありさ",
@@ -135,6 +144,7 @@
     "seasonsActive": [2]
   },
   {
+    "_id": "5de7e83c323859de5fd5b269",
     "number": "9",
     "englishName": "Hikaru Ota",
     "japaneseName": "太田光る",
@@ -150,6 +160,7 @@
     "seasonsActive": [2]
   },
   {
+    "_id": "5de7e83c323859de5fd5b26a",
     "number": "10",
     "englishName": "Natsumi Saito",
     "japaneseName": "斎藤夏美",
@@ -165,6 +176,7 @@
     "seasonsActive": [2]
   },
   {
+    "_id": "5de7e83c323859de5fd5b26b",
     "number": "11",
     "englishName": "Misaki Tamori",
     "japaneseName": "田森美咲",
@@ -180,6 +192,7 @@
     "seasonsActive": [2]
   },
   {
+    "_id": "5de7e83c323859de5fd5b26c",
     "number": "12",
     "englishName": "Yuto Handa",
     "japaneseName": "半田悠人",
@@ -195,6 +208,7 @@
     "seasonsActive": [2]
   },
   {
+    "_id": "5de7e83c323859de5fd5b26d",
     "number": "13",
     "englishName": "Riko Nagai",
     "japaneseName": "永井理子",
@@ -210,6 +224,7 @@
     "seasonsActive": [2]
   },
   {
+    "_id": "5de7e83c323859de5fd5b26e",
     "number": "14",
     "englishName": "Momoka Mitsunaga",
     "japaneseName": "光永百花",
@@ -225,6 +240,7 @@
     "seasonsActive": [2]
   },
   {
+    "_id": "5de7e83c323859de5fd5b26f",
     "number": "15",
     "englishName": "Hayato Terashima",
     "japaneseName": "寺島速人",
@@ -240,6 +256,7 @@
     "seasonsActive": [2]
   },
   {
+    "_id": "5de7e83c323859de5fd5b270",
     "number": "16",
     "englishName": "Yuuki Byrnes",
     "japaneseName": "バーンズ勇気",
@@ -255,6 +272,7 @@
     "seasonsActive": [2]
   },
   {
+    "_id": "5de7e83c323859de5fd5b271",
     "number": "17",
     "englishName": "Masako Endo",
     "japaneseName": "遠藤政子",

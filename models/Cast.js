@@ -49,10 +49,10 @@ const CastSchema = mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Couple',
   }],
-  dateJoined: {
-    type: Date,
-    default: Date.now
-  }
+  comments: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Comments',
+  }]
 });
 
 const Cast = mongoose.model('Cast', CastSchema);
