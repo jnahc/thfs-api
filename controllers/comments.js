@@ -63,8 +63,28 @@ const showOneComment = (req,res) => {
   });
 };
 
+const updateComment = (req,res) => {
+  db.Comment.findByIdAndUpdate(
+    req.params.commentId,
+    req.body,
+    {new: true}, (err, updatedComment) => {
+      if (err) return res.status(500).json({
+        status: 500,
+        error: [{message: "Something went wrong! Please try again"}],
+      });
+      res.json({
+        status: 200,
+        count: 1,
+        data: updatedComment,
+        requestedAt: new Date().toLocaleDateString()
+      })
+    }
+  );
+};
+
 
 module.exports = {
   createComment,
-  showOneComment
+  showOneComment,
+  updateComment,
 }
