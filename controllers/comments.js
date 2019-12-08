@@ -101,10 +101,28 @@ const destroy = (req, res) => {
   );
 };
 
+// COMMENTS BY CAST 
+
+const castComments = (req, res) => {
+  db.Cast.findById({_id:req.params.castId}, (err, foundCast) => {
+    if (err) return res.status(500)
+    if (foundCast) {
+      foundCast.populate("comments").execPopulate((err, cast) => {
+        if (err) return res.status(500).json({err})
+        res.send({status: 200, comments: cast.comments})
+      })
+    } else {
+      res.status(500).json({message: 'Cast not found'})
+    }
+  });
+};
+
+// COMMENTS BY USER
 
 module.exports = {
   createComment,
   showOneComment,
   updateComment,
-  destroy
+  destroy,
+  castComments,
 }
