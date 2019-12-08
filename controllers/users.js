@@ -32,7 +32,27 @@ const editCurrentUser = (req, res) => {
   )
 }
 
+const showUserFirstName = (req, res) => {
+  // console.log(req.session)
+  // if (!req.session.currentUser) return res.status(401).json({
+  //   status:401,
+  //   message: `Unauthorized. Please login and try again.`
+  // });
+  
+  db.User.findById(req.params.id, (err, foundUser) => {
+    if (err) return res.status(500).json({
+      status: 500,
+      message: err,
+    });
+    res.status(200).json({
+      status: 200,
+      data: foundUser.firstName,
+    });
+  });
+};
+
 module.exports = {
   showCurrentUser,
   editCurrentUser,
+  showUserFirstName
 }
