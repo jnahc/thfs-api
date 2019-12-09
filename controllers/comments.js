@@ -118,6 +118,19 @@ const castComments = (req, res) => {
 };
 
 // COMMENTS BY USER
+const userComments = (req, res) => {
+  db.User.findById({_id:req.params.userId}, (err, foundUser) => {
+    if (err) return.res.status(500)
+    if (foundUser) {
+      foundUser.populate("comments").execPopulate((err, user) => {
+        if (err) return res.status(500).json({err})
+        res.send({status: 200, comments: user.comments})
+      })
+    } else {
+      res.status(500).json({message: 'User not found'})
+    }
+  });
+};
 
 module.exports = {
   createComment,
