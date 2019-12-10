@@ -47,6 +47,7 @@ const showUserFirstName = (req, res) => {
     res.status(200).json({
       status: 200,
       data: foundUser.firstName,
+      data2: foundUser.picture
     });
   });
 };
