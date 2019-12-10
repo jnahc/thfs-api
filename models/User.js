@@ -17,6 +17,9 @@ const UserSchema = mongoose.Schema({
     type: String,
     required: [true, 'Password is required'],
   },
+  picture: {
+    type: String,
+  },
   favoriteCast: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Cast',

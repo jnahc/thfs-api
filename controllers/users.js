@@ -27,10 +27,16 @@ const editCurrentUser = (req, res) => {
       if (error) return res.status(500).json({
         status: 500,
         error: [{message: 'Something went wrong! Please try again.'}]
+      });
+      res.json({
+        status: 200,
+        count: 1,
+        data: updatedUser,
+        requestedAt: new Date().toLocaleDateString()
       })
     }
-  )
-}
+  );
+};
 
 const showUserFirstName = (req, res) => {
   // console.log(req.session)
