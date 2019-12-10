@@ -120,7 +120,7 @@ const castComments = (req, res) => {
 // COMMENTS BY USER
 const userComments = (req, res) => {
   db.User.findById({_id:req.params.userId}, (err, foundUser) => {
-    if (err) return.res.status(500)
+    if (err) return res.status(500)
     if (foundUser) {
       foundUser.populate("comments").execPopulate((err, user) => {
         if (err) return res.status(500).json({err})
@@ -138,4 +138,5 @@ module.exports = {
   updateComment,
   destroy,
   castComments,
+  userComments,
 }
