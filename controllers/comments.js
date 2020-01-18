@@ -85,6 +85,7 @@ const updateComment = (req,res) => {
 // DESTROY COMMENT
 
 const destroy = (req, res) => {
+  // delete the actual comment
   db.Comment.findByIdAndDelete(
     req.params.commentId, (err, destroyComment) => {
       if (err) return res.status(500).json({
@@ -99,6 +100,42 @@ const destroy = (req, res) => {
       })
     }
   );
+  // find it in the user array and delete it there
+  db.Users.findByIdAndUpdate(
+    req.params.userId,
+    {comments: comments.filter (comment => comment != commentId )},
+    {new: true}, 
+    (error, updatedUser) => {
+      if (error) return res.status(500).json({
+        status: 500,
+        error: [{message: 'User not found'}]
+      });
+      res.json({
+        status:200,
+        count:1,
+        data: updatedUser,
+        requestedAt: new Date().toLocaleDateString()
+      })
+    }
+  );
+  // find it in the cast array and delete it there
+  // db.Cast.findByIdAndUpdate(
+  //   req.params.castId,
+  //   req.body,
+  //   {new: true}, 
+  //   (error, updatedCast) => {
+  //     if (error) return res.status(500).json({
+  //       status: 500,
+  //       error: [{message: 'Cast not found'}]
+  //     });
+  //     res.json({
+  //       status: 200,
+  //       count:1,
+  //       data: updatedCast,
+  //       requestedAt: new Date().toLocaleDateString()
+  //     })
+  //   }
+  // );
 };
 
 // COMMENTS BY CAST 
