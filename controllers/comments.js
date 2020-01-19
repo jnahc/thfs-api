@@ -102,14 +102,16 @@ const destroy = (req, res) => {
       db.User.findById({_id:req.params.userId}, (err, user) => {
         if (err) return console.log(err)
         if (user){
-          console.log(`Found User - ${user}`)
+          // console.log(`Found User - ${user}`)
+          filtered = user.comments.filter(comment => comment != req.params.commentId);
+          user.comments = filtered;
         }
       });
       //find cast - delete comment
       db.Cast.findById({_id:req.params.castId}, (err, cast) => {
         if (err) return console.log(err)
         if (cast){
-          console.log(`Found User - ${cast}`)
+          console.log(`Found cast - ${cast}`)
         }
       });
     }
