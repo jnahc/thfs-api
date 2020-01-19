@@ -103,7 +103,9 @@ const destroy = (req, res) => {
         if (err) return console.log(err)
         if (user){
           // console.log(`Found User - ${user}`)
-          filtered = user.comments.filter(comment => comment != req.params.commentId);
+          console.log(`User comments array - ${user.comments}, user comments array length - ${user.comments.length}`);
+          console.log(`req.params.commentId - ${req.params.commentId}`);
+          let filtered = user.comments.filter(comment => comment != req.params.commentId);
           user.comments = filtered;
         }
       });
