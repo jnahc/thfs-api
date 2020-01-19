@@ -103,14 +103,14 @@ const destroy = (req, res) => {
         if (err) return console.log(err)
         if (user){
           // console.log(`Found User - ${user}`)
-          console.log(`User comments array - ${user.comments}, user comments array length - ${user.comments.length}`);
-          console.log(`req.params.commentId - ${req.params.commentId}`);
-          const filtered = user.comments.filter(comment => comment != req.params.commentId);
-          console.log(`Filtered Array - ${filtered}, filteredArr length - ${filtered.length}`)
-          user.comments = filtered;
+          // console.log(`User comments array - ${user.comments}, user comments array length - ${user.comments.length}`);
+          // console.log(`req.params.commentId - ${req.params.commentId}`);
+          const filteredUserComments = user.comments.filter(comment => comment != req.params.commentId);
+          // console.log(`Filtered Array - ${filtered}, filteredArr length - ${filtered.length}`)
+          user.comments = filteredUserComments;
           user.save((err, result) => {
             if (err) return console.log(err)
-            console.log(result)
+            console.log(result);
           })
         }
       });
@@ -118,7 +118,12 @@ const destroy = (req, res) => {
       db.Cast.findById({_id:req.params.castId}, (err, cast) => {
         if (err) return console.log(err)
         if (cast){
-          console.log(`Found cast - ${cast}`)
+          const filteredCastComments = cast.comments.filter(comment => comment != req.params.commentId);
+          cast.comment = filteredCastComments;
+          cast.save((err, result) => {
+            if (err) return console.log(err)
+            console.log(result);
+          })
         }
       });
     }
