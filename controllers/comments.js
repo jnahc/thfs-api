@@ -101,23 +101,23 @@ const destroy = (req, res) => {
     }
   );
   // find it in the user array and delete it there
-  // db.Users.findByIdAndUpdate(
-  //   req.params.userId,
-  //   {comments: comments.filter (comment => comment != commentId )},
-  //   {new: true}, 
-  //   (error, updatedUser) => {
-  //     if (error) return res.status(500).json({
-  //       status: 500,
-  //       error: [{message: 'User not found'}]
-  //     });
-  //     res.json({
-  //       status:200,
-  //       count:1,
-  //       data: updatedUser,
-  //       requestedAt: new Date().toLocaleDateString()
-  //     })
-  //   }
-  // );
+  db.Users.findByIdAndUpdate(
+    req.params.userId,
+    {comments: comments.filter (comment => comment != commentId )},
+    {new: true}, 
+    (error, updatedUser) => {
+      if (error) return res.status(500).json({
+        status: 500,
+        error: [{message: 'User not found'}]
+      });
+      res.json({
+        status:200,
+        count:1,
+        data: updatedUser,
+        requestedAt: new Date().toLocaleDateString()
+      })
+    }
+  );
   // find it in the cast array and delete it there
   // db.Cast.findByIdAndUpdate(
   //   req.params.castId,
