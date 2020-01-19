@@ -97,45 +97,23 @@ const destroy = (req, res) => {
         count: 1,
         data: destroyComment,
         requestedAt: new Date().toLocaleString(),
-      })
-    }
-  );
-  // find it in the user array and delete it there
-  db.Users.findByIdAndUpdate(
-    req.params.userId,
-    {comments: comments.filter (comment => comment != commentId )},
-    {new: true}, 
-    (error, updatedUser) => {
-      if (error) return res.status(500).json({
-        status: 500,
-        error: [{message: 'User not found'}]
       });
-      res.json({
-        status:200,
-        count:1,
-        data: updatedUser,
-        requestedAt: new Date().toLocaleDateString()
-      })
+      //find user - delete comment
+      db.User.findById({_id:req.params.userId}, (err, user) => {
+        if (err) return console.log(err)
+        if (user){
+          console.log(`Found User - ${user}`)
+        }
+      });
+      //find cast - delete comment
+      db.Cast.findById({_id:req.params.castId}, (err, cast) => {
+        if (err) return console.log(err)
+        if (cast){
+          console.log(`Found User - ${cast}`)
+        }
+      });
     }
   );
-  // find it in the cast array and delete it there
-  // db.Cast.findByIdAndUpdate(
-  //   req.params.castId,
-  //   req.body,
-  //   {new: true}, 
-  //   (error, updatedCast) => {
-  //     if (error) return res.status(500).json({
-  //       status: 500,
-  //       error: [{message: 'Cast not found'}]
-  //     });
-  //     res.json({
-  //       status: 200,
-  //       count:1,
-  //       data: updatedCast,
-  //       requestedAt: new Date().toLocaleDateString()
-  //     })
-  //   }
-  // );
 };
 
 // COMMENTS BY CAST 
