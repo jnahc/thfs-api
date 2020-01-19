@@ -119,7 +119,7 @@ const destroy = (req, res) => {
         if (err) return console.log(err)
         if (cast){
           const filteredCastComments = cast.comments.filter(comment => comment != req.params.commentId);
-          cast.comment = filteredCastComments;
+          cast.comments = filteredCastComments;
           cast.save((err, result) => {
             if (err) return console.log(err)
             console.log(result);
