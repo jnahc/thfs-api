@@ -108,6 +108,10 @@ const destroy = (req, res) => {
           const filtered = user.comments.filter(comment => comment != req.params.commentId);
           console.log(`Filtered Array - ${filtered}, filteredArr length - ${filtered.length}`)
           user.comments = filtered;
+          user.save((err, result) => {
+            if (err) return console.log(err)
+            console.log(result)
+          })
         }
       });
       //find cast - delete comment
