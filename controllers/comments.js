@@ -105,7 +105,8 @@ const destroy = (req, res) => {
           // console.log(`Found User - ${user}`)
           console.log(`User comments array - ${user.comments}, user comments array length - ${user.comments.length}`);
           console.log(`req.params.commentId - ${req.params.commentId}`);
-          let filtered = user.comments.filter(comment => comment != req.params.commentId);
+          const filtered = user.comments.filter(comment => comment != req.params.commentId);
+          console.log(`Filtered Array - ${filtered}, filteredArr length - ${filtered.length}`)
           user.comments = filtered;
         }
       });
