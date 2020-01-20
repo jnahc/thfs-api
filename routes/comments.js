@@ -7,7 +7,7 @@ router.post("/:userId/:castId", ctrl.comments.createComment),
 router.put('/:commentId', ctrl.comments.updateComment),
 router.delete('/:userId/:castId/:commentId', ctrl.comments.destroy),
 router.get('/cast/:castId', ctrl.comments.castComments),
-router.get("/all",
+router.get('/',
 ctrl.comments.showAllComments),
 
 module.exports = router;
