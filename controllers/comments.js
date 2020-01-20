@@ -164,7 +164,7 @@ const userComments = (req, res) => {
 // SHOW ALL COMMENTS
 
 const showAllComments = (req, res) => {
-  db.Comments.find({}, (err, allComments) => {
+  db.Comment.find({}, (err, allComments) => {
     if (err) return res.status(500).json({
       status: 500,
       error: [{message: 'Something went wrong! Please try again'}],
