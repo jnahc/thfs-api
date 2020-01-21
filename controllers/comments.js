@@ -169,18 +169,18 @@ const showAllComments = (req, res) => {
       status: 500,
       error: [{message: 'Something went wrong! Please try again'}],
     });
-    if (allComments) {
-      allComments.populate("author", "cast").execPopulate((err, comment) => {
-        if (err) return res.status(500).json({err})
-        res.send({
-          status: 200,
-          author: comment.author,
-          cast: comment.cast,
-        })
-      })
-    } else {
-      res.status(500).json({message: 'Comment not found'})
-    }
+    // if (allComments) {
+    //   allComments.populate("author", "cast").execPopulate((err, comment) => {
+    //     if (err) return res.status(500).json({err})
+    //     res.send({
+    //       status: 200,
+    //       author: comment.author,
+    //       cast: comment.cast,
+    //     })
+    //   })
+    // } else {
+    //   res.status(500).json({message: 'Comment not found'})
+    // }
     res.json({
       status: 200,
       count: allComments.length,
