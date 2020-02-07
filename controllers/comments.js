@@ -150,19 +150,37 @@ const destroy = (req, res) => {
 
 // COMMENTS BY CAST 
 
+// const castComments = (req, res) => {
+//   db.Cast.findById({_id:req.params.castId}, (err, foundCast) => {
+//     if (err) return res.status(500)
+//     if (foundCast) {
+//       foundCast.populate("comments").execPopulate((err, cast) => {
+//         if (err) return res.status(500).json({err})
+//         res.send({status: 200, comments: cast.comments})
+//       })
+//     } else {
+//       res.status(500).json({message: 'Cast not found'})
+//     }
+//   });
+// };
+
 const castComments = (req, res) => {
-  db.Cast.findById({_id:req.params.castId}, (err, foundCast) => {
-    if (err) return res.status(500)
-    if (foundCast) {
-      foundCast.populate("comments").execPopulate((err, cast) => {
-        if (err) return res.status(500).json({err})
-        res.send({status: 200, comments: cast.comments})
-      })
-    } else {
-      res.status(500).json({message: 'Cast not found'})
-    }
+  db.Cast.findById({_id:req.params.castId})
+  .populate('comments')
+  .exec(( err, foundCommments) => {
+    if (err) return res.status(500).json({
+      status: 500,
+      message: err
+    });
+    res.status(200).json({
+      status:200,
+      count:1,
+      data: foundCommments,
+      requestedAt: new Date().toLocaleString()
+    });
   });
 };
+
 
 // COMMENTS BY USER
 const userComments = (req, res) => {
