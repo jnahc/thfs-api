@@ -47,6 +47,10 @@ const showOneComment = (req,res) => {
   db.Comment.findById(req.params.commentId, (err,foundComment) => {
     if (err) return console.log (err);
     if (foundComment) {
+      foundComment.populate('author', 'cast').execPopulate((err, foundComment) => {
+        if (err) return res.status(500).json({err})
+        res.send({status: 200, author: foundComment.author, cast: foundComment.cast})
+      })
       res.json({
         status: 200,
         count: 1,
