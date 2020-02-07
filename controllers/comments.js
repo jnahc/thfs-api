@@ -175,7 +175,7 @@ const castComments = (req, res) => {
     res.status(200).json({
       status:200,
       count:1,
-      data: foundCommments,
+      data: foundCommments.comments,
       requestedAt: new Date().toLocaleString()
     });
   });
@@ -200,30 +200,21 @@ const userComments = (req, res) => {
 // SHOW ALL COMMENTS
 
 const showAllComments = (req, res) => {
-  db.Comment.find({}, (err, allComments) => {
-    if (err) return res.status(500).json({
-      status: 500,
-      error: [{message: 'Something went wrong! Please try again'}],
+  db.Comment.find({})
+    .populate('author')
+    .populate('cast')
+    .exec(( err, foundComments) => {
+      if (err) return res.status(500).json({
+        status:500,
+        message: err
+      });
+      res.status(200).json({
+        status:200,
+        count:1,
+        data:foundComments,
+        requestedAt: new Date().toLocaleString()
+      });
     });
-    // if (allComments) {
-    //   allComments.populate("author", "cast").execPopulate((err, comment) => {
-    //     if (err) return res.status(500).json({err})
-    //     res.send({
-    //       status: 200,
-    //       author: comment.author,
-    //       cast: comment.cast,
-    //     })
-    //   })
-    // } else {
-    //   res.status(500).json({message: 'Comment not found'})
-    // }
-    res.json({
-      status: 200,
-      count: allComments.length,
-      data: allComments,
-      requestedAt: new Date().toLocaleString(),
-    });
-  });
 };
 
 module.exports = {
