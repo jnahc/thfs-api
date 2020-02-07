@@ -43,29 +43,43 @@ const createComment = (req,res) => {
 
 // SHOW ONE COMMENT
 
-const showOneComment = (req,res) => {
-  db.Comment.findById(req.params.commentId, (err,foundComment) => {
-    if (err) return console.log (err);
-    if (foundComment) {
-      foundComment.populate('author', 'cast').execPopulate((err, foundComment) => {
-        if (err) return res.status(500).json({err})
-        res.send({status: 200, author: foundComment.author, cast: foundComment.cast})
-      })
-      res.json({
-        status: 200,
-        count: 1,
+// const showOneComment = (req,res) => {
+//   db.Comment.findById(req.params.commentId, (err,foundComment) => {
+//     if (err) return console.log (err);
+//     if (foundComment) {
+//       res.json({
+//         status: 200,
+//         count: 1,
+//         data: foundComment,
+//         requestedAt: new Date().toLocaleString(),
+//       });
+//     } else {
+//       res.json({
+//         status: 404,
+//         count: 0,
+//         data: `Post with ID ${req.params.postId} was not found. Please try again.`
+//       });
+//     };
+//   });
+// };
+
+const showOneComment = (req, res) => {
+  db.Comment.findById(req.params.commentId)
+    .populate('author')
+    .populate('cast')
+    .exec(( err, foundComment ) => {
+      if (err) return res.status(500).json({
+        status: 500,
+        message: err
+      });
+      res.status(200).json({
+        status:200,
+        count:1,
         data: foundComment,
-        requestedAt: new Date().toLocaleString(),
+        requestedAt: new Date().toLocaleString()
       });
-    } else {
-      res.json({
-        status: 404,
-        count: 0,
-        data: `Post with ID ${req.params.postId} was not found. Please try again.`
-      });
-    };
-  });
-};
+    });
+}
 
 const updateComment = (req,res) => {
   db.Comment.findByIdAndUpdate(
