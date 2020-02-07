@@ -43,43 +43,45 @@ const createComment = (req,res) => {
 
 // SHOW ONE COMMENT
 
-// const showOneComment = (req,res) => {
-//   db.Comment.findById(req.params.commentId, (err,foundComment) => {
-//     if (err) return console.log (err);
-//     if (foundComment) {
-//       res.json({
-//         status: 200,
-//         count: 1,
-//         data: foundComment,
-//         requestedAt: new Date().toLocaleString(),
-//       });
-//     } else {
-//       res.json({
-//         status: 404,
-//         count: 0,
-//         data: `Post with ID ${req.params.postId} was not found. Please try again.`
-//       });
-//     };
-//   });
-// };
-
-const showOneComment = (req, res) => {
-  db.Comment.findById(req.params.commentId)
-    .populate('author')
-    .populate('cast')
-    .exec(( err, foundComment ) => {
-      if (err) return res.status(500).json({
-        status: 500,
-        message: err
-      });
-      res.status(200).json({
-        status:200,
-        count:1,
+const showOneComment = (req,res) => {
+  db.Comment.findById(req.params.commentId, (err,foundComment) => {
+    if (err) return console.log (err);
+    if (foundComment) {
+      res.json({
+        status: 200,
+        count: 1,
         data: foundComment,
-        requestedAt: new Date().toLocaleString()
+        requestedAt: new Date().toLocaleString(),
       });
-    });
-}
+    } else {
+      res.json({
+        status: 404,
+        count: 0,
+        data: `Post with ID ${req.params.postId} was not found. Please try again.`
+      });
+    };
+  });
+};
+
+
+// with populate - need to refactor
+// const showOneComment = (req, res) => {
+//   db.Comment.findById(req.params.commentId)
+//     .populate('author')
+//     .populate('cast')
+//     .exec(( err, foundComment ) => {
+//       if (err) return res.status(500).json({
+//         status: 500,
+//         message: err
+//       });
+//       res.status(200).json({
+//         status:200,
+//         count:1,
+//         data: foundComment,
+//         requestedAt: new Date().toLocaleString()
+//       });
+//     });
+// }
 
 const updateComment = (req,res) => {
   db.Comment.findByIdAndUpdate(
@@ -150,36 +152,37 @@ const destroy = (req, res) => {
 
 // COMMENTS BY CAST 
 
-// const castComments = (req, res) => {
-//   db.Cast.findById({_id:req.params.castId}, (err, foundCast) => {
-//     if (err) return res.status(500)
-//     if (foundCast) {
-//       foundCast.populate("comments").execPopulate((err, cast) => {
-//         if (err) return res.status(500).json({err})
-//         res.send({status: 200, comments: cast.comments})
-//       })
-//     } else {
-//       res.status(500).json({message: 'Cast not found'})
-//     }
-//   });
-// };
-
 const castComments = (req, res) => {
-  db.Cast.findById({_id:req.params.castId})
-  .populate('comments')
-  .exec(( err, foundCommments) => {
-    if (err) return res.status(500).json({
-      status: 500,
-      message: err
-    });
-    res.status(200).json({
-      status:200,
-      count:1,
-      data: foundCommments.comments,
-      requestedAt: new Date().toLocaleString()
-    });
+  db.Cast.findById({_id:req.params.castId}, (err, foundCast) => {
+    if (err) return res.status(500)
+    if (foundCast) {
+      foundCast.populate("comments").execPopulate((err, cast) => {
+        if (err) return res.status(500).json({err})
+        res.send({status: 200, comments: cast.comments})
+      })
+    } else {
+      res.status(500).json({message: 'Cast not found'})
+    }
   });
 };
+
+// with populate - need to refactor front end
+// const castComments = (req, res) => {
+//   db.Cast.findById({_id:req.params.castId})
+//   .populate('comments')
+//   .exec(( err, foundCommments) => {
+//     if (err) return res.status(500).json({
+//       status: 500,
+//       message: err
+//     });
+//     res.status(200).json({
+//       status:200,
+//       count:1,
+//       data: foundCommments.comments,
+//       requestedAt: new Date().toLocaleString()
+//     });
+//   });
+// };
 
 
 // COMMENTS BY USER
