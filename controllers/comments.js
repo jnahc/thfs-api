@@ -213,7 +213,7 @@ const showAllComments = (req, res) => {
       });
       res.status(200).json({
         status:200,
-        data:foundComments.comments,
+        data:foundComments,
         requestedAt: new Date().toLocaleString()
       });
     });
