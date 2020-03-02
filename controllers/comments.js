@@ -204,8 +204,8 @@ const userComments = (req, res) => {
 
 const showAllComments = (req, res) => {
   db.Comment.find({})
-    .populate('author')
-    .populate('cast')
+    // .populate('author')
+    // .populate('cast')
     .exec(( err, foundComments) => {
       if (err) return res.status(500).json({
         status:500,
